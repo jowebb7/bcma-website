@@ -1,0 +1,66 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 35%;
+}
+.nav * {
+  border: 2px solid red;
+}
+.navbox {
+  width: 15vw;
+  text-align: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.info {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.info * {
+  border: 2px red solid;
+}
+.infobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2vw;
+  width: 20vw;
+  text-align: center;
+}
+.infopic {
+}
+.infopic > img {
+  height: 15vw;
+  width: 20vw;
+  object-fit: fill;
+}
+.infotext {
+}
+
+.infotitle {
+}
+
+@media only screen and (max-width: 1000px) {
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    margin: 10vh 25%;
+  }
+  .infobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 2vw;
+    width: 40vw;
+    text-align: center;
+  }
+  .infopic > img {
+    height: 30vw;
+    width: 40vw;
+    object-fit: fill;
+  }
+}

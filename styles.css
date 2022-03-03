@@ -39,9 +39,11 @@
   object-fit: fill;
 }
 .infotext {
+  font-size: 1.5vw;
 }
 
 .infotitle {
+  font-size: 2vw;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -62,5 +64,13 @@
     height: 30vw;
     width: 40vw;
     object-fit: fill;
+  }
+
+  .infotext {
+    font-size: 3vw;
+  }
+
+  .infotitle {
+    font-size: 4vw;
   }
 }

@@ -9,11 +9,13 @@
 .navbox {
   width: 15vw;
   text-align: center;
+  font-size: 1.5vw;
 }
 .title {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
+  font-size: 3vw;
 }
 .info {
   margin-top: 10vh;
@@ -45,24 +47,54 @@
 .infotitle {
   font-size: 2vw;
 }
+.upcoming {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 69vw;
+  margin: auto;
+}
 
+.upcoming * {
+  border: 2px solid red;
+}
+.upcomingTitle {
+  font-size: 2vw;
+}
+.upcomingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.upcomingEvent {
+  width: 100%;
+}
 @media only screen and (max-width: 1000px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    margin: 0vh 10%;
+  }
+  .navbox {
+    width: 30vw;
+    font-size: 3vw;
+  }
   .info {
     flex-direction: column;
     justify-content: center;
-    margin: 10vh 25%;
+    margin: 10vh 17.5%;
   }
   .infobox {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5vh 2vw;
-    width: 40vw;
+    width: 60vw;
     text-align: center;
   }
   .infopic > img {
-    height: 30vw;
-    width: 40vw;
+    height: 40vw;
+    width: 60vw;
     object-fit: fill;
   }
 
@@ -72,5 +104,11 @@
 
   .infotitle {
     font-size: 4vw;
+  }
+  .upcomingContainer {
+    flex-direction: column;
+  }
+  .upcomingContainer * {
+    text-align: center;
   }
 }
